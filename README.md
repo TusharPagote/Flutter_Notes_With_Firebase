@@ -1,12 +1,11 @@
 # note_keeper
 
-A new Flutter project.
 
 
 
 - This is Flutter Notes App with Firebase connectivity.
 - In this project we have used the letest version of flutter and firebase database to store our notes on firebase.
-- We have created this app with flutter and in this app we have used CRUD operations using firebase firestore database. 
+- We have created this app with flutter and in this app we have performed CRUD operations using firebase firestore database. 
 - The project output is as given below : 
 
 ![1](https://user-images.githubusercontent.com/86527836/178110454-bf493253-d3d7-4090-96c3-682e69ec7dbd.png)
