@@ -1,16 +1,16 @@
 # note_keeper
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+- This is Flutter Notes App with Firebase connectivity.
+- In this project we have used the letest version of flutter and firebase database to store our notes on firebase.
+- We have created this app with flutter and in this app we have performed CRUD operations using firebase firestore database. 
+- The project output is as given below : 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![1](https://user-images.githubusercontent.com/86527836/178110454-bf493253-d3d7-4090-96c3-682e69ec7dbd.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![2](https://user-images.githubusercontent.com/86527836/178110465-19c67550-4a9a-47cf-af13-4e7a29ff12ee.png)
+
+![3](https://user-images.githubusercontent.com/86527836/178110469-af3a9590-e21d-4dee-a9ee-9d8f1bbef1e6.png)
+
