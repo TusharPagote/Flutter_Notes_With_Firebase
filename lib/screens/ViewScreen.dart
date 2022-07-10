@@ -37,28 +37,16 @@ class _UpdateScreenState extends State<UpdateScreen> {
       appBar: AppBar(
         backgroundColor: AppStyle.cardsColor[color_id],
         elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.black),
-        title: Text(
+        iconTheme: const IconThemeData(color: Colors.black),
+        title: const Text(
           "Add a note",
           style: TextStyle(color: Colors.black),
         ),
         actions: [
           TextButton(
               onPressed: () {
-                //   widget.docToEdit.reference
-                //       .update({
-                //         'notes_title': _updateTitleController,
-                //         'creation_date': date,
-                //         'note_content': _updateMainController,
-                //       })
-                //       .whenComplete(() => Navigator.pop(context))
-                //       .catchError((error) =>
-                //           print("Failed to add new note deu to $error"));
-                // },
-                // child: const Text('Save')),
-
                 widget.docToEdit.reference.delete();
-//
+
                 FirebaseFirestore.instance.collection("Notes").add({
                   "notes_title": _updateTitleController.text,
                   "creation_date": date,
@@ -72,8 +60,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                 }).catchError(
                     (error) => print("Failed to add new note deu to $error"));
               },
-              // child: const Text('Save')),
-              child: Icon(Icons.save)),
+              child: const Icon(Icons.save)),
           TextButton(
               onPressed: () => showDialog<String>(
                     context: context,
@@ -100,8 +87,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                       ],
                     ),
                   ),
-              // child: const Text('Delete')),
-              child: Icon(Icons.delete)),
+              child: const Icon(Icons.delete)),
         ],
       ),
       body: SafeArea(
@@ -114,27 +100,27 @@ class _UpdateScreenState extends State<UpdateScreen> {
               children: [
                 TextField(
                   controller: _updateTitleController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: InputBorder.none,
                     hintText: 'Note Title',
                   ),
                   style: AppStyle.mainTitle,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8.0,
                 ),
                 Text(
                   date,
                   style: AppStyle.datetitle,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 28.0,
                 ),
                 TextField(
                   controller: _updateMainController,
                   keyboardType: TextInputType.multiline,
                   maxLines: null,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: InputBorder.none,
                     hintText: 'Note Content',
                   ),
